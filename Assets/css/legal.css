@@ -1,0 +1,154 @@
+/* =============================================================
+   LEGAL — estilos compartidos: terminos.html + privacidad.html
+   ============================================================= */
+
+/* PAGE CONTENT */
+.page-content {
+  padding: 120px 0 80px;
+  min-height: 70vh;
+}
+
+.page-header { margin-bottom: 48px; }
+
+.page-header .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.14), rgba(16, 185, 129, 0.06));
+  border: 1px solid var(--brand-border);
+  color: var(--brand-2);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.page-header .eyebrow::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 8px var(--brand);
+}
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.page-meta { font-size: 14px; color: var(--text-mute); }
+
+/* CUERPO LEGAL */
+.legal-body { max-width: 760px; }
+
+.legal-body h2 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-top: 48px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.legal-body h2:first-child { margin-top: 0; }
+
+.legal-body p {
+  font-size: 15px;
+  color: var(--text-soft);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.legal-body ul {
+  list-style: none;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legal-body ul li {
+  font-size: 15px;
+  color: var(--text-soft);
+  line-height: 1.7;
+  padding-left: 20px;
+  position: relative;
+}
+
+.legal-body ul li::before {
+  content: '·';
+  position: absolute;
+  left: 6px;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.legal-body a { color: var(--brand-2); text-decoration: underline; text-underline-offset: 3px; }
+.legal-body a:hover { color: var(--brand); }
+.legal-body strong { color: var(--text); font-weight: 600; }
+
+/* TABLA DE PRECIOS (terminos.html) */
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+.price-table th {
+  text-align: left;
+  padding: 10px 16px;
+  background: var(--bg-card);
+  color: var(--text-soft);
+  font-weight: 600;
+  border: 1px solid var(--border);
+}
+
+.price-table td {
+  padding: 10px 16px;
+  color: var(--text-soft);
+  border: 1px solid var(--border);
+}
+
+.price-table tr:hover td { background: rgba(255, 255, 255, 0.02); }
+
+/* TARJETA DE CONTACTO */
+.contact-card {
+  margin-top: 48px;
+  padding: 24px 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-card h3 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.contact-card p { font-size: 14px; color: var(--text-mute); margin-bottom: 0; }
+.contact-card a { color: var(--brand-2); }
+.contact-card a:hover { color: var(--brand); }
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .price-table { font-size: 13px; }
+}
